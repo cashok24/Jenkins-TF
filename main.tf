@@ -9,3 +9,15 @@ tags = {
     Name = "TF-Instance1"
 }
 }
+provider "aws" {
+  region = "us-east-1"
+}
+
+resource "aws_s3_bucket" "S3 Bucket" {
+  bucket = "sachinbuc3"
+
+  tags = {
+    Name        = "terrabuc"
+    }
+}
+
